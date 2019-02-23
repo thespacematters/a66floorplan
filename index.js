@@ -58,8 +58,6 @@
         filtered[floor].layers.push(filtered[floor].last)
       }
 
-      console.log(filtered[floor].layers, 'layer');
-
       filtered[floor].layers.forEach((src) => {
         let image = document.createElement('img')
         image.setAttribute('src', `layers/${src}`)
