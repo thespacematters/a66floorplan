@@ -1,0 +1,589 @@
+const REF = [{
+  id: 'BG1A',
+  name: 'PBGA-test.png',
+  last: true,
+  floor: 1
+}, {
+  id: 'BG2A',
+  name: '0BGA-test.png',
+  last: true,
+  floor: 2
+}, {
+  id: 'BG3A',
+  name: '1BGA-test.png',
+  last: true,
+  floor: 3
+}, {
+  id: 'BG4A',
+  name: '2BGA-test.png',
+  last: true,
+  floor: 4
+}, {
+  id: 'BG5A',
+  name: '3BGA-test.png',
+  last: true,
+  floor: 5
+}, {
+  id: 'BG6A',
+  name: 'TBGA-test.png',
+  last: true,
+  floor: 6
+}, {
+  id: 'W1A',
+  name: 'PWA-test.png',
+  last: true,
+  floor: 1
+}, {
+  id: 'W2A',
+  name: '0WA-test.png',
+  last: true,
+  floor: 2
+}, {
+  id: 'W3A',
+  name: '1WA-test.png',
+  last: true,
+  floor: 3
+}, {
+  id: 'W4A',
+  name: '2WA-test.png',
+  last: true,
+  floor: 4
+}, {
+  id: 'W5A',
+  name: '3WA-test.png',
+  last: true,
+  floor: 5
+}, {
+  id: 'W6A',
+  name: 'TWA-test.png',
+  last: true,
+  floor: 6
+}, {
+  id: 'R1A',
+  name: 'R201A-test.png',
+  floor: 4
+}, {
+  id: 'R2A',
+  name: 'R202-1A-test.png',
+  floor: 4
+}, {
+  id: 'R3A',
+  name: 'R202-2A-test.png',
+  floor: 4
+}, {
+  id: 'R4A',
+  name: 'R202-3A-test.png',
+  floor: 4
+}, {
+  id: 'R5A',
+  name: 'R202-4A-test.png',
+  floor: 4
+}, {
+  id: 'R6A',
+  name: 'R203-1A-test.png',
+  floor: 4
+}, {
+  id: 'R7A',
+  name: 'R203-2A-test.png',
+  floor: 4
+}, {
+  id: 'R8A',
+  name: 'R206A-test.png',
+  floor: 4
+}, {
+  id: 'R9A',
+  name: 'R207A-test.png',
+  floor: 4
+}, {
+  id: 'R10A',
+  name: 'R208A-test.png',
+  floor: 4
+}, {
+  id: 'R11A',
+  name: 'R211-1A-test.png',
+  floor: 4
+}, {
+  id: 'R12A',
+  name: 'R211-2A-test.png',
+  floor: 4
+}, {
+  id: 'R13A',
+  name: 'R212-2A-test.png',
+  floor: 4
+}, {
+  id: 'R14A',
+  name: 'R212-1A-test.png',
+  floor: 4
+}, {
+  id: 'R15A',
+  name: 'R213A-test.png',
+  floor: 4
+}, {
+  id: 'R16A',
+  name: 'R214-1A-test.png',
+  floor: 4
+}, {
+  id: 'R17A',
+  name: 'R214-2A-test.png',
+  floor: 4
+}, {
+  id: 'R18A',
+  name: 'R214-3A-test.png',
+  floor: 4
+}, {
+  id: 'R19A',
+  name: 'R215A-test.png',
+  floor: 4
+}, {
+  id: 'R20A',
+  name: 'R216A-test.png',
+  floor: 4
+}, {
+  id: 'R21A',
+  name: 'R217A-test.png',
+  floor: 4
+}, {
+  id: 'R22A',
+  name: 'R218A-test.png',
+  floor: 4
+}, {
+  id: 'R23A',
+  name: 'R219A-test.png',
+  floor: 4
+}, {
+  id: 'R24A',
+  name: 'R220A-test.png',
+  floor: 4
+}, {
+  id: 'R25A',
+  name: 'R221A-test.png',
+  floor: 4
+}, {
+  id: 'R26A',
+  name: 'R222A-test.png',
+  floor: 4
+}, {
+  id: 'R27A',
+  name: 'R223A-test.png',
+  floor: 4
+}, {
+  id: 'R28A',
+  name: 'R224A-test.png',
+  floor: 4
+}, {
+  id: 'R29A',
+  name: 'R225A-test.png',
+  floor: 4
+}, {
+  id: 'R30A',
+  name: 'R301A-test.png',
+  floor: 5
+}, {
+  id: 'R31A',
+  name: 'R302A-test.png',
+  floor: 5
+}, {
+  id: 'R32A',
+  name: 'R303-1A-test.png',
+  floor: 5
+}, {
+  id: 'R33A',
+  name: 'R303-2A-test.png',
+  floor: 5
+}, {
+  id: 'R34A',
+  name: 'R303-3A-test.png',
+  floor: 5
+}, {
+  id: 'R35A',
+  name: 'R303-4A-test.png',
+  floor: 5
+}, {
+  id: 'R36A',
+  name: 'R303-5A-test.png',
+  floor: 5
+}, {
+  id: 'R37A',
+  name: 'R306A-test.png',
+  floor: 5
+}, {
+  id: 'R38A',
+  name: 'R307A-test.png',
+  floor: 5
+}, {
+  id: 'R39A',
+  name: 'R308A-test.png',
+  floor: 5
+}, {
+  id: 'R40A',
+  name: 'R311A-test.png',
+  floor: 5
+}, {
+  id: 'R41A',
+  name: 'R312-1A-test.png',
+  floor: 5
+}, {
+  id: 'R42A',
+  name: 'R312-2A-test.png',
+  floor: 5
+}, {
+  id: 'R43A',
+  name: 'R313-1A-test.png',
+  floor: 5
+}, {
+  id: 'R44A',
+  name: 'R313-2A-test.png',
+  floor: 5
+}, {
+  id: 'R45A',
+  name: 'R314-1A-test.png',
+  floor: 5
+}, {
+  id: 'R46A',
+  name: 'R314-2A-test.png',
+  floor: 5
+}, {
+  id: 'R54A',
+  name: 'R315A-test.png',
+  floor: 5
+}, {
+  id: 'R55A',
+  name: 'R316A-test.png',
+  floor: 5
+}, {
+  id: 'R56A',
+  name: 'R317A-test.png',
+  floor: 5
+}, {
+  id: 'R57A',
+  name: 'R318A-test.png',
+  floor: 5
+}, {
+  id: 'R58A',
+  name: 'R319A-test.png',
+  floor: 5
+}, {
+  id: 'R59A',
+  name: 'R320A-test.png',
+  floor: 5
+}, {
+  id: 'R60A',
+  name: 'R321A-test.png',
+  floor: 5
+}, {
+  id: 'R61A',
+  name: 'R322A-test.png',
+  floor: 5
+}, {
+  id: 'R62A',
+  name: 'R323A-test.png',
+  floor: 5
+}, {
+  id: 'R63A',
+  name: 'R324A-test.png',
+  floor: 5
+}, {
+  id: 'R64A',
+  name: 'R325A-test.png',
+  floor: 5
+}, {
+  id: 'R68A',
+  name: 'RP01A-test.png',
+  floor: 1
+}, {
+  id: 'R69A',
+  name: 'RP02A-test.png',
+  floor: 1
+}, {
+  id: 'R70A',
+  name: 'RP03A-test.png',
+  floor: 1
+}, {
+  id: 'R71A',
+  name: 'RP04A-test.png',
+  floor: 1
+}, {
+  id: 'R72A',
+  name: 'RP05A-test.png',
+  floor: 1
+}, {
+  id: 'R73A',
+  name: 'RP06A-test.png',
+  floor: 1
+}, {
+  id: 'R74A',
+  name: 'RP07A-test.png',
+  floor: 1
+}, {
+  id: 'R75A',
+  name: 'RP08A-test.png',
+  floor: 1
+}, {
+  id: 'R166A',
+  name: 'RP09A-test.png',
+  floor: 1
+}, {
+  id: 'R167A',
+  name: 'RP10A-test.png',
+  floor: 1
+}, {
+  id: 'R83A',
+  name: 'RP16A-test.png',
+  floor: 1
+}, {
+  id: 'R84A',
+  name: 'RP17A-test.png',
+  floor: 1
+}, {
+  id: 'R85A',
+  name: 'RP18A-test.png',
+  floor: 1
+}, {
+  id: 'R86A',
+  name: 'RP19A-test.png',
+  floor: 1
+}, {
+  id: 'R87A',
+  name: 'RP20A-test.png',
+  floor: 1
+}, {
+  id: 'R88A',
+  name: 'RP21A-test.png',
+  floor: 1
+}, {
+  id: 'R89A',
+  name: 'RP22A-test.png',
+  floor: 1
+}, {
+  id: 'R90A',
+  name: 'RP23A-test.png',
+  floor: 1
+}, {
+  id: 'R91A',
+  name: 'RP24A-test.png',
+  floor: 1
+}, {
+  id: 'R92A',
+  name: 'RP25A-test.png',
+  floor: 1
+}, {
+  id: 'R93A',
+  name: 'RP26A-test.png',
+  floor: 1
+}, {
+  id: 'R95A',
+  name: 'RP28A-test.png',
+  floor: 1
+}, {
+  id: 'R96A',
+  name: 'RP29A-test.png',
+  floor: 1
+}, {
+  id: 'R97A',
+  name: 'RP30A-test.png',
+  floor: 1
+}, {
+  id: 'R98A',
+  name: 'RP31A-test.png',
+  floor: 1
+}, {
+  id: 'R99A',
+  name: 'RP32A-test.png',
+  floor: 1
+}, {
+  id: 'R100A',
+  name: 'RP33A-test.png',
+  floor: 1
+}, {
+  id: 'R101A',
+  name: 'RP34A-test.png',
+  floor: 1
+}, {
+  id: 'R102A',
+  name: 'RP35A-test.png',
+  floor: 1
+}, {
+  id: 'R168A',
+  name: 'RP36A-test.png',
+  floor: 1
+}, {
+  id: 'R104A',
+  name: 'RP37A-test.png',
+  floor: 1
+}, {
+  id: 'R105A',
+  name: 'R001A-test.png',
+  floor: 2
+}, {
+  id: 'R106A',
+  name: 'R002A-test.png',
+  floor: 2
+}, {
+  id: 'R107A',
+  name: 'R003A-test.png',
+  floor: 2
+}, {
+  id: 'R110A',
+  name: 'R006A-test.png',
+  floor: 2
+}, {
+  id: 'R111A',
+  name: 'R007A-test.png',
+  floor: 2
+}, {
+  id: 'R112A',
+  name: 'R008A-test.png',
+  floor: 2
+}, {
+  id: 'R113A',
+  name: 'R009-1A-test.png',
+  floor: 2
+}, {
+  id: 'R136A',
+  name: 'R009-2A-test.png',
+  floor: 2
+}, {
+  id: 'R137A',
+  name: 'R009-3A-test.png',
+  floor: 2
+}, {
+  id: 'R114A',
+  name: 'R010A-test.png',
+  floor: 2
+}, {
+  id: 'R115A',
+  name: 'R011A-test.png',
+  floor: 2
+}, {
+  id: 'R126A',
+  name: 'R022A-test.png',
+  floor: 2
+}, {
+  id: 'R127A',
+  name: 'R023A-test.png',
+  floor: 2
+}, {
+  id: 'R128A',
+  name: 'R024A-test.png',
+  floor: 2
+}, {
+  id: 'R129A',
+  name: 'R025A-test.png',
+  floor: 2
+}, {
+  id: 'R130A',
+  name: 'R026A-test.png',
+  floor: 2
+}, {
+  id: 'R131A',
+  name: 'R027A-test.png',
+  floor: 2
+}, {
+  id: 'R132A',
+  name: 'R028A-test.png',
+  floor: 2
+}, {
+  id: 'R133A',
+  name: 'R029A-test.png',
+  floor: 2
+}, {
+  id: 'R135A',
+  name: 'R031A-test.png',
+  floor: 2
+}, {
+  id: 'R138A',
+  name: 'R101A-test.png',
+  floor: 3
+}, {
+  id: 'R139A',
+  name: 'R102-1A-test.png',
+  floor: 3
+}, {
+  id: 'R159A',
+  name: 'R102-2A-test.png',
+  floor: 3
+}, {
+  id: 'R140A',
+  name: 'R103A-test.png',
+  floor: 3
+}, {
+  id: 'R143A',
+  name: 'R106A-test.png',
+  floor: 3
+}, {
+  id: 'R144A',
+  name: 'R107A-test.png',
+  floor: 3
+}, {
+  id: 'R145A',
+  name: 'R108A-test.png',
+  floor: 3
+}, {
+  id: 'R148A',
+  name: 'R111A-test.png',
+  floor: 3
+}, {
+  id: 'R149A',
+  name: 'R112-1A-test.png',
+  floor: 3
+}, {
+  id: 'R160A',
+  name: 'R112-2A-test.png',
+  floor: 3
+}, {
+  id: 'R150A',
+  name: 'R113A-test.png',
+  floor: 3
+}, {
+  id: 'R151A',
+  name: 'R114-1A-test.png',
+  floor: 3
+}, {
+  id: 'R161A',
+  name: 'R114-2A-test.png',
+  floor: 3
+}, {
+  id: 'R152A',
+  name: 'R115A-test.png',
+  floor: 3
+}, {
+  id: 'R153A',
+  name: 'R116A-test.png',
+  floor: 3
+}, {
+  id: 'R154A',
+  name: 'R117A-test.png',
+  floor: 3
+}, {
+  id: 'R155A',
+  name: 'R118A-test.png',
+  floor: 3
+}, {
+  id: 'R156A',
+  name: 'R119A-test.png',
+  floor: 3
+}, {
+  id: 'R157A',
+  name: 'R120A-test.png',
+  floor: 3
+}, {
+  id: 'R158A',
+  name: 'R121A-test.png',
+  floor: 3
+}, {
+  id: 'R162A',
+  name: 'R122A-test.png',
+  floor: 3
+}, {
+  id: 'R163A',
+  name: 'R123A-test.png',
+  floor: 3
+}, {
+  id: 'R164A',
+  name: 'R124A-test.png',
+  floor: 3
+}, {
+  id: 'R165A',
+  name: 'R125A-test.png',
+  floor: 3
+}]

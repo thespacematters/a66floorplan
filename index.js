@@ -3,6 +3,14 @@
   let plans = document.querySelector('.plans')
   let sliderIndex = 0
   let floorList = []
+  const FLOORS = {
+    0: 'basement',
+    1: 'ground floor',
+    2: '1st floor',
+    3: '2nd floor',
+    4: '3rd floor',
+    5: 'attic'
+  }
 
   let layers = getParam('layers')
   filter()
@@ -39,7 +47,6 @@
   }
 
   function draw() {
-    // todo first last
     Object.keys(filtered).forEach((floor) => {
       let newFloor = document.createElement('div')
       newFloor.classList.add('floor')
@@ -55,7 +62,7 @@
 
       filtered[floor].layers.forEach((src) => {
         let image = document.createElement('img')
-        image.setAttribute('src', `testlayers/${src}`)
+        image.setAttribute('src', `layers/${src}`)
         newFloor.appendChild(image)
       })
 
