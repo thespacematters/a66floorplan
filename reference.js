@@ -1,32 +1,32 @@
 const REF = [{
   id: 'BG1A',
   name: 'PBGA-test.png',
-  last: true,
+  first: true,
   floor: 1
 }, {
   id: 'BG2A',
   name: '0BGA-test.png',
-  last: true,
+  first: true,
   floor: 2
 }, {
   id: 'BG3A',
   name: '1BGA-test.png',
-  last: true,
+  first: true,
   floor: 3
 }, {
   id: 'BG4A',
   name: '2BGA-test.png',
-  last: true,
+  first: true,
   floor: 4
 }, {
   id: 'BG5A',
   name: '3BGA-test.png',
-  last: true,
+  first: true,
   floor: 5
 }, {
   id: 'BG6A',
   name: 'TBGA-test.png',
-  last: true,
+  first: true,
   floor: 6
 }, {
   id: 'W1A',
