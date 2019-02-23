@@ -1,0 +1,50 @@
+body, html, * {
+  box-sizing: border-box;
+  border: 0;
+  margin:0;
+}
+
+body, html, .plans, .floor img {
+  width: 100%;
+  height: 100%;
+}
+
+.plans {
+  position: relative;
+}
+.floor {
+  position: relative;
+  display: none;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: calc(100% - 100px);
+  height: 100%;
+}
+.floor img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  object-fit: contain;
+  margin: auto;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  border-radius: 100%;
+  font-size: 22px;
+}
+button:hover {
+  background-color: black;
+}
+button[name="prev-btn"] {
+  left: 15px;
+}
+button[name="next-btn"] {
+  right: 15px;
+}
