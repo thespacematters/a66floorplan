@@ -50,6 +50,8 @@
   }
 
   function hideButtons () {
+    let parent = document.querySelector('.floor')
+    parent.classList.add('full-size')
     next.style.display = 'none'
     prev.style.display = 'none'
     // let cont = document.querySelector('.floor-btns')
