@@ -52,12 +52,11 @@
   function hideButtons () {
     next.style.display = 'none'
     prev.style.display = 'none'
-
-    let cont = document.querySelector('.floor-btns')
-    let button = document.createElement('button')
-    button.classList.add('floor-name', 'active')
-    button.innerHTML = FLOORS[Object.keys(filtered)[0]] || ''
-    cont.appendChild(button)
+    // let cont = document.querySelector('.floor-btns')
+    // let button = document.createElement('button')
+    // button.classList.add('floor-name', 'active')
+    // button.innerHTML = FLOORS[Object.keys(filtered)[0]] || ''
+    // cont.appendChild(button)
   }
 
   function slider (index) {
@@ -67,7 +66,9 @@
 
     floorList.forEach((f, i) => {
       f.style.display = i === sliderIndex ? 'block' : 'none'
-      i === sliderIndex ? buttons[i].classList.add('active') : buttons[i].classList.remove('active')
+      if (buttons.length) {
+        i === sliderIndex ? buttons[i].classList.add('active') : buttons[i].classList.remove('active')
+      }
     })
   }
 
