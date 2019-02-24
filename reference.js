@@ -1,34 +1,4 @@
 const REF = [{
-  id: 'BG1A',
-  name: 'PBGA-test.png',
-  first: true,
-  floor: 1
-}, {
-  id: 'BG2A',
-  name: '0BGA-test.png',
-  first: true,
-  floor: 2
-}, {
-  id: 'BG3A',
-  name: '1BGA-test.png',
-  first: true,
-  floor: 3
-}, {
-  id: 'BG4A',
-  name: '2BGA-test.png',
-  first: true,
-  floor: 4
-}, {
-  id: 'BG5A',
-  name: '3BGA-test.png',
-  first: true,
-  floor: 5
-}, {
-  id: 'BG6A',
-  name: 'TBGA-test.png',
-  first: true,
-  floor: 6
-}, {
   id: 'W1A',
   name: 'PWA-test.png',
   last: true,
@@ -57,6 +27,36 @@ const REF = [{
   id: 'W6A',
   name: 'TWA-test.png',
   last: true,
+  floor: 6
+}, {
+  id: 'BG7A',
+  name: 'PBGA-test.png',
+  first: true,
+  floor: 1
+}, {
+  id: 'BG8A',
+  name: '0BGA-test.png',
+  first: true,
+  floor: 2
+}, {
+  id: 'BG9A',
+  name: '1BGA-test.png',
+  first: true,
+  floor: 3
+}, {
+  id: 'BG10A',
+  name: '2BGA-test.png',
+  first: true,
+  floor: 4
+}, {
+  id: 'BG11A',
+  name: '3BGA-test.png',
+  first: true,
+  floor: 5
+}, {
+  id: 'BG12A',
+  name: 'TBGA-test.png',
+  first: true,
   floor: 6
 }, {
   id: 'R1A',
