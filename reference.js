@@ -719,4 +719,12 @@ const REF = [{
   id: 'R165A',
   name: 'R125A-2016-01-01.png',
   floor: 3
+}, {
+  id: 'R481A',
+  name: 'R023-1A-2019-10-01.png',
+  floor: 2
+}, {
+  id: 'R482A',
+  name: 'R023-2A-2019-10-01.png',
+  floor: 2
 }]
